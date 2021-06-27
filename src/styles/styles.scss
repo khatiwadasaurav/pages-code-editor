@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+.panel {
+    display: flex;
+    height: 50vh;
+}
+.editor-container {
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5rem;
+    background-color: hsl(225, 6%, 25%);
+}
+.editor-container.collapsed {
+    flex-grow: 0.4;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+    position: absolute;
+    overflow: hidden !important;
+}
+
+.editor-title {
+    justify-content: space-between;
+    background-color: hsl(225, 6%, 13%);
+    color: rgb(110, 201, 118);
+    padding: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    font-family: Poppins;
+    text-align: center;
+}
+.code-mirror-wrapper {
+    flex-grow: 1;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    overflow: hidden;
+    height: 100% !important;
+}
+.expand-collapse-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.CodeMirror {
+    // height: auto !important;
+}
+.CodeMirror-scroll {
+    max-height: 330px !important;
+}
+
+.CodeMirror-wrap pre.CodeMirror-line,
+.CodeMirror-wrap pre.CodeMirror-line-like {
+    word-break: break-word;
+}
