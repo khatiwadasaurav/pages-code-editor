@@ -1,9 +1,10 @@
 A simple and clean online code editor , only javascript for now but the plan is to add more languages to the editor
 Things to do here
--[] make the re-sizeable components
--[] make the theme selector
--[] add console for output
--[] make editors detachable
+
+-    [ ] make the re-sizeable components
+-    [ ] make the theme selector
+-    [ ] add console for output
+-    [ ] make editors detachable
 
 # Getting Started with Create React App
 
